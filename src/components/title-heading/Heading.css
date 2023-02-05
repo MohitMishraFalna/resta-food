@@ -1,0 +1,43 @@
+/* heading explore */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    animation: slideUp .8s;
+}
+
+.heading h5{
+    position: relative;
+    font-family: var(--font-pacifico);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.heading h5::before{
+    position: absolute;
+    top: 50%;
+    left: -55px;
+    content: '';
+    width: 3rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.heading h5::after{
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    content: '';
+    width: 3rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.heading h1{
+    font-family: var(--font-nunito);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+}

@@ -1,0 +1,112 @@
+.teamMemberCard{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 17.5rem;
+    height: 21rem;
+    /* padding: 1.3rem; */
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all .8s;
+    /* margin-top: 5rem; */
+    margin-bottom: 5rem;
+}
+
+.teamMemberCard .upperSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 26rem;
+    padding: 1rem;
+}
+
+.teamMemberCard .upperSide .teamMember-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.teamMemberCard .upperSide .teamMember-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .8s;
+}
+
+.teamMemberCard .upperSide h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: var(--font-nunito);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.teamMemberCard .upperSide p{
+    font-family: var(--font-heebo);
+    color: var(--gray-color);
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+
+.teamMemberCard .social-media{
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.teamMemberCard .social-media .social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.5rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #fff;
+    margin-right: 0.5rem;
+    background: var(--primary-color);
+}
+
+.teamMemberCard .social-media .social-icon svg{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-nunito);
+}
+
+.teamMemberCard:hover img{
+    transform: scale(1.1);
+}
+
+.teamMemberCard:hover{
+    height: 25rem;
+}
+
+.teamMemberCard:hover .social-media{
+    visibility: visible;    
+    transition: all .8s;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .teamMemberCard{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .teamMemberCard{
+        width: 25rem;
+    }
+}

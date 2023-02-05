@@ -1,0 +1,45 @@
+.contact-container{
+    background-color: #fff;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 2rem;
+}
+
+.small-heading{
+    position: relative;
+    font-family: var(--font-pacifico);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.small-heading::after{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    content: '';
+    width: 2.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.normal-text{
+    display: flex;
+}
+
+.normal-text span svg{
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.postal-address{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-color);
+}

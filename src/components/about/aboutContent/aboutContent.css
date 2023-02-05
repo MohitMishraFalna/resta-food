@@ -1,0 +1,248 @@
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideUp .8s;
+}
+
+/* left side */
+.about-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin-top: 4.5rem;
+}
+
+.about-left .upperImg{
+    margin-left: 1.5rem;
+    margin-right: -2rem;
+}
+
+.about-left .lowerImg{
+    margin-left: 1.5rem;
+    margin-right: -10rem;
+}
+
+.about-left .upperImg .upperBig, 
+.about-left .lowerImg .lowerBig {
+    width: 40%;
+    max-width: 40%;
+    height: 100%;
+    max-height: 100%;
+    margin-right: 1rem;    
+}
+
+.about-left .lowerImg{
+    margin-top: 1rem;
+    margin-left: 4.2rem;
+}
+
+.about-left .upperImg .upperSmall,
+.about-left .lowerImg .lowerSmall{
+    width: 30%;
+    max-width: 30%;
+    height: 80%;
+    max-height: 80%;
+    margin-right: 1rem;
+}
+
+.about-left .lowerImg .lowerSmall{
+    margin-bottom: 60px;
+}
+
+/* right side */
+.about-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: .5rem;
+}
+
+.about-right h5{
+    position: relative;
+    font-family: var(--font-pacifico);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.about-right h5::after{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    content: '';
+    width: 3rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.about-right h1{
+    font-family: var(--font-nunito);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondry-color);
+    margin-bottom: 1rem;
+}
+
+.about-right h1 svg{
+    color: var(--primary-color);
+}
+
+.about-right p{
+    font-family: var(--font-heebo);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+}
+
+.about-right .quality{
+    display: flex;
+}
+
+.about-right .quality .years, .about-right .quality .popular{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about-right .quality .years{
+    margin-right: 7rem;
+}
+
+.about-right .quality .years::before,
+.about-right .quality .popular::before{
+    position: absolute;
+    content: '';
+    height: 4rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.number{
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: var(--font-nunito);
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--font-heebo);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+    .about-left .upperImg{
+        margin-left: 1.5rem;
+        margin-right: -1rem;
+    }
+    
+    .about-left .lowerImg{
+        margin-left: 4rem;
+        margin-right: -5rem;
+    }
+    
+    .about-left .lowerImg .lowerSmall{
+        margin-bottom: 40px;
+    }
+
+    .about-right{
+        padding: 1rem;
+    }    
+
+    /* .about-right .quality .years{
+        margin-right: 3rem;
+    } */
+
+    .about-right h1{
+        font-size: 2rem;
+    }
+    
+    .about-right .quality{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left{
+        width: 100%;
+    }
+
+    .about-left .upperImg{
+        margin-left: 3rem;
+        margin-right: 0;
+    }
+    
+    .about-left .lowerImg{
+        margin-left: 9rem;
+        margin-right: 0;
+    }
+    
+    .about-left .lowerImg .lowerSmall{
+        margin-bottom: 50px;
+    }
+
+    .about-right{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+            
+    .about-right .quality .years{
+        margin-right: 12rem;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left{
+        width: 100%;
+    }
+
+    .about-left .upperImg{
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+    
+    .about-left .lowerImg{
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+    
+    .about-left .lowerImg .lowerSmall{
+        margin-bottom: 30px;
+    }
+
+    .about-right{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .about-right h1{
+        font-size: 2rem;
+    }
+
+    .about-right .quality{
+        display: flex;
+        flex-direction: column;
+    }
+}

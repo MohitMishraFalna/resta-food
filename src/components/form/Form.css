@@ -1,0 +1,219 @@
+.form-container{
+    display: flex;
+    background: #fff;
+    margin-top: 3rem;
+}
+
+.form-container-contact{
+    padding: 2rem;
+}
+
+/* left side */
+.form-container .form-left{
+    width: 50%;
+    height: 100%;
+}
+.form-container .form-left .form-img{
+    position: relative;
+}
+
+.form-container .form-left .form-img .video-img{
+    height: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../../img/video.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.form-container .form-left .play-btn::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    animation: heightGrow 1.5s ease-out infinite;
+}
+
+.form-container .form-left .play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+@keyframes heightGrow {
+    0%{ 
+        height: 100px;
+        width: 100px;
+        opacity: 1;
+    }
+
+    100%{
+        height: 150px;
+        width: 150px;
+        opacity: 0;
+    }
+}
+
+.form-container .form-left .play-btn svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--secondry-color);
+}
+
+/* right side */
+.form-container .form-right{
+    width: 50%;
+}
+
+.form-right-bg-color{
+    background-color: var(--secondry-color);
+}
+
+.form-book-padding{
+    padding: 2.5rem 1.5rem;
+}
+
+.form-contact-padding{
+    padding: 0 1.5rem;
+}
+
+/* heading */
+.form-container .form-right .form-content .form-heading .form-small-heading{
+    position: relative;
+    font-family: var(--font-pacifico);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.form-container .form-right .form-content .form-heading .form-small-heading::after{
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    content: '';
+    width: 2.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.form-container .form-right .form-content .form-heading h1{
+    font-family: var(--font-nunito);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.book-heading-color{
+    color: #fff;
+}
+
+.contact-heading-color{
+    color: var(--secondry-color);
+}
+
+/* form */
+
+.form-container .form-right .form-content .form-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .form-right .form-content .form-group .form-row{
+    display: flex;
+    width: 100%;    
+}
+
+.form-container .form-right .form-content .form-group .form-row .form-control{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-container .form-right .form-content .form-group .form-control .input-control{
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--gray-color);
+    border-radius: 2px;
+    outline: none;
+    padding: 1rem .75rem;
+}
+
+.form-container .form-right .form-content .form-group .form-control .form-label{
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    font-family: var(--font-heebo);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6a6060ba;
+    transition: all .30s ease;
+}
+
+.form-container .form-right .form-content .form-group .form-control .input-control:not(:placeholder-shown).input-control:not(:focus) + .form-label,
+.form-container .form-right .form-content .form-group .form-control .input-control:focus ~ .form-label{
+    transform: translate(0px, -14px);
+    font-size: 14px;
+}
+
+.form-container .form-right .form-content .form-group .form-control select{
+    font-size: 1rem;
+    font-family: var(--font-heebo);
+    color: var(--gray-color);
+}
+
+/* ~ this sign and + this sign both are doing same work */
+.form-container .form-right .form-content .form-group .form-control select ~ .form-label{
+    transform: translate(0px, -14px);
+    font-size: 14px;
+}
+
+.form-container .form-right .form-content .form-group .form-control .textarea-book{
+    height: 100px;
+}
+
+.form-container .form-right .form-content .form-group .form-control .textarea-contact{
+    height: 165px;
+}
+
+/* select option hide */
+.select-display{
+    display: none;
+}
+
+.form-container .form-right .form-content .form-group .form-control .btnClass{
+    width: 100%;
+    height: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .form-container{
+        flex-direction: column;
+    }
+
+    .form-container .form-left{
+        width: 100%;
+    }
+
+    .form-container .form-right{
+        width: 100%;
+    }
+}

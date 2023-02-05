@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* color combination */
+  /* --primary-color: #FEA116; */
+  --primary-color: red;
+  --secondry-color: #0F172B;
+  --gray-color: #666565; 
+  --white-color: #F1F8FF;
+  --font-heebo: 'Heebo', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-pacifico: 'Pacifico', cursive;
+
+  /* shadow effect */
+  --box-shadow: 0 0 45px rgb(0 0 0 / 8%)
+}
+
+body{
+  background-color: var(--white-color);
+  width: 1320px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.animClass{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.slideUpClass{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.col{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  body{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.zoomOut{
+  animation: zoomOutAction .8s;
+}
+
+@keyframes zoomOutAction {
+  0%{ padding: 5rem; }
+  100%{ padding: 0rem; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    0%{ transform: translateY(-100%);}
+    100%{ transform: translateY(0);}
+}
+
+@keyframes slideLeft {
+    0%{ transform: translateX(-100%);}
+    100%{ transform: translateX(0);}
+}
+
+@keyframes slideRight {
+  0%{ transform: translateX(100%);}
+  100%{ transform: translateX(0);}
+}

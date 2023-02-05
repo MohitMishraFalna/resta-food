@@ -1,0 +1,115 @@
+.footer-contenair{
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 45px rgb(56 52 52 / 31%);
+    color: var(--secondry-color);
+    margin-top: 3rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+.footer-contenair .footer-content .company-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading{
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: var(--font-pacifico);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.footer-text{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-heebo);
+    color: var(--secondry-color);
+    line-height: 2;
+    list-style: none;
+}
+
+.company-link .footer-text li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondry-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font-nunito);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.company-link .footer-text li a svg{
+    margin-right: 10px;
+}
+
+.contact-address .footer-text .add-icon{
+    margin-right: 10px;
+}
+
+.contact-address .footer-social{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.contact-address .footer-social .social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--secondry-color);
+    cursor: pointer;
+}
+
+.contact-address .footer-social .social-icon:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.opening .footer-text .opening-day{
+    font-weight: 400;
+    font-family: var(--font-nunito);
+    font-size: 1.25rem;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+}
+
+.opening .footer-text .opening-time{
+    font-weight: 400;
+    font-family: var(--font-nunito);
+    font-size: 1rem;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 920px) {
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-contenair .footer-content .company-link, .contact-address{
+        margin-bottom: 3rem;
+    }
+
+}

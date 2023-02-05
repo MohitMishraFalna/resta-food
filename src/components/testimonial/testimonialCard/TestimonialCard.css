@@ -1,0 +1,85 @@
+/* card */
+/* swiper class some adition feature add */
+.swiper{
+    width: 100%;
+    height: 70%;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination{
+    position: static !important;
+    margin-top: 1rem !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--primary-color) !important;
+}
+
+.testimonial-container .testimonial-card{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 2px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+ .testimonial-container .testimonial-card svg{
+    font-size: 2rem;
+    font-family: var(--font-nunito);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.testimonial-container .testimonial-card .testimonial-text{
+    font-size: 1rem;
+    font-family: var(--font-heebo);
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+}
+
+.testimonial-container .testimonial-card .client-description{
+    display: flex;
+}
+
+.testimonial-container .testimonial-card .client-description img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.testimonial-container .testimonial-card .client-description .personal-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-container .testimonial-card .client-description .personal-detail p{
+    font-family: var(--font-nunito);
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+}
+
+.testimonial-container .testimonial-card .client-description .personal-detail .designation{
+    font-family: var(--font-heebo);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-color);
+    text-transform: capitalize;
+}
+

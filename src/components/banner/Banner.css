@@ -1,0 +1,56 @@
+.banner{
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)) ,url('../../img/bg-hero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.9rem 0;
+}
+
+.main-content h1{
+    font-family: var(--font-nunito);
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+    animation: slideDown .8s;
+}
+
+.main-content .order-list ol{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-family: var(--font-heebo);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.main-content .order-list ol li:nth-child(1){
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main-content .order-list ol li:nth-child(2){
+    margin-right: 10px;
+}
+
+.main-content .order-list ol li:nth-child(3){
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main-content .order-list ol li:nth-child(4){
+    margin-right: 10px;
+}
