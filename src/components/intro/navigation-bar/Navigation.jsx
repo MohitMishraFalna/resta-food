@@ -57,7 +57,7 @@ const Navigation = () => {
                 </div>
                 <div className="nav-right">
                     <ul className="menu" onClick={active}>
-                        <li className="menuItem"><Link to='/home' className='active'>HOME</Link></li>
+                        <li className="menuItem"><Link to='/resta-food' className='active'>HOME</Link></li>
                         <li className="menuItem"><Link to='/about'>ABOUT</Link></li>
                         <li className="menuItem"><Link to='/services'>SERVICE</Link></li>
                         <li className="menuItem"><Link to='/menu'>MENU</Link></li>
