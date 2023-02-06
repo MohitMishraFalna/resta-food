@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/resta-food/static/css/main.a5661b26.css",
+    "main.js": "/resta-food/static/js/main.1fe4e4da.js",
+    "static/media/hero.png": "/resta-food/static/media/hero.acf6b140345bbbf2ef14.png",
+    "static/media/about-1.jpg": "/resta-food/static/media/about-1.530df234f3d96aede365.jpg",
+    "static/media/bg-hero.jpg": "/resta-food/static/media/bg-hero.33d1571bd2c2bf3f795a.jpg",
+    "static/media/about-3.jpg": "/resta-food/static/media/about-3.1e4ce4b7d2bc275f8185.jpg",
+    "static/media/about-2.jpg": "/resta-food/static/media/about-2.9b5b9bd6f0d767fac3eb.jpg",
+    "static/media/errorpage.png": "/resta-food/static/media/errorpage.745abb38ffb9ac1dad77.png",
+    "static/media/team-4.jpg": "/resta-food/static/media/team-4.f728a531be269b3d471d.jpg",
+    "static/media/team-3.jpg": "/resta-food/static/media/team-3.d917072105ceb2beb47e.jpg",
+    "static/media/video.png": "/resta-food/static/media/video.c05dcb73dd0309b483af.png",
+    "static/media/team-2.jpg": "/resta-food/static/media/team-2.a052551d15a289c07a6f.jpg",
+    "static/media/team-1.jpg": "/resta-food/static/media/team-1.92658d94c39d7c348ed6.jpg",
+    "static/media/about-4.jpg": "/resta-food/static/media/about-4.616965a9ad62d1bb379b.jpg",
+    "index.html": "/resta-food/index.html",
+    "main.a5661b26.css.map": "/resta-food/static/css/main.a5661b26.css.map",
+    "main.1fe4e4da.js.map": "/resta-food/static/js/main.1fe4e4da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5661b26.css",
+    "static/js/main.1fe4e4da.js"
+  ]
+}
