@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Navigation.css'
 import {FaUtensils} from 'react-icons/fa';
 import Button from '../../button/Button';
@@ -57,7 +57,7 @@ const Navigation = () => {
                 </div>
                 <div className="nav-right">
                     <ul className="menu" onClick={active}>
-                        <li className="menuItem"><Link to='/' className='active'>HOME</Link></li>
+                        <li className="menuItem"><Link to='/resta-food' className='active'>HOME</Link></li>
                         <li className="menuItem"><Link to='/about'>ABOUT</Link></li>
                         <li className="menuItem"><Link to='/services'>SERVICE</Link></li>
                         <li className="menuItem"><Link to='/menu'>MENU</Link></li>

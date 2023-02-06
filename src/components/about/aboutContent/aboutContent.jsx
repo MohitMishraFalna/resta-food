@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './aboutContent.css';
 import Button from '../../button/Button';
 import {FaUtensils} from 'react-icons/fa';
@@ -8,8 +8,6 @@ import About3 from '../../../img/about-3.jpg';
 import About4 from '../../../img/about-4.jpg';
 
 const AboutContent = () => {
-
-  const [counting, setCounting] = useState();
 
   window.addEventListener('scroll', () => {
     let upperBig = document.querySelector('.upperBig');

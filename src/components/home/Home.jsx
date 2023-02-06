@@ -6,7 +6,6 @@ import ServiceContent from '../services/serviceContent/Services';
 import AboutContent from '../about/aboutContent/aboutContent';
 import MenuItem from '../menu/menuItem/MenuItem';
 import TestimonialCard from '../testimonial/testimonialCard/TestimonialCard';
-import TeamMember from '../team-member/teamMember/TeamMember';
 import Heading from '../title-heading/Heading';
 
 
