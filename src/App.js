@@ -13,9 +13,9 @@ import ErrorPage from "./components/error-page/ErrorPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/resta-food'>
         <Routes>
-          <Route index path='/' element={<Home />} />
+          <Route index path='/resta-food' element={<Home />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="team" element={<Team />} />
